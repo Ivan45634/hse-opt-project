@@ -1,0 +1,8 @@
+{
+    "batch_size": 256,
+    "n_epoches_train": 200,
+    "eval_runs": 3,
+    "n_epoches_tune": 5,
+    "tune_runs": 30,
+    "dtype": "float32"
+}
