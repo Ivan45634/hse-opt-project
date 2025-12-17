@@ -58,3 +58,12 @@ def libsvm_prepocess(args):
         X = X @ A
 # ...
 ```
+## Run the experiment
+```python
+python scripts/libsvm/run_mushrooms_table1.py
+```
+
+## Visualization
+ ```python
+python scripts/libsvm/plot_mushrooms_table1.py
+```
