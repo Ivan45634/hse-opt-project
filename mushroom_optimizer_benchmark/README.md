@@ -37,11 +37,6 @@ class LinearClassifier(nn.Module):
 
 Dataset is splitted into train/val/test with the ratio 7:2:1.
 
-While `--scale` is being raised, we apply a diagonal feature scaling:
-$$
-\tilde x=x\cdot\text{diag}(e),\quad e_i=\exp(a_i),\,a_i\sim\text{Uniform}[-k,k]
-$$
-This is intended to test invariance / robustness to feature scaling and the resulting conditioning changes. This transformation can dramatically change the Lipschitz constant $L$, gradient anisotropy, and effective conditioning—hence it is a strong stress test for first-order methods.
 ```python
 def libsvm_prepocess(args):
     g, seed_worker = utils.set_global_seed(args.seed)
